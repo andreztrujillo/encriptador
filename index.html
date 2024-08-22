@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css"> 
+</head>
+<body>
+    <header class="header">
+        <img class="imagen__logo" src="./assets/1720379889837.png" alt="logo de la pagina">
+        <h1 class="contenido__titulo">ENCRIPTADOR DE TEXTO</h1>
+    </header>
+    <main class="main">
+        <section class="form-box">
+            <form action="" class="formulario" id="formulario">
+                
+                <div class="aviso__informativo" id="aviso__informativo">
+                    <img class="logo__informacion" src="./assets/Group.png" alt="">
+                    <label for="texto_encriptar" class="contenido__texto">Solo letras minusculas y sin caracteres especiales</label>
+                </div>
+                <div class="textoInsertado" id="textoEntrada">
+                    <textarea class="cuadro__texto" type="text" name="texto_encriptar" id="texto_encriptar" placeholder="Ingrese texto aquí..." rows="10" cols="20" onkeyup="document.getElementById(this.id).value=document.getElementById(this.id).value.toLowerCase()"></textarea>
+                </div>
+                <div class="botones" id="botones">
+                    <button class="btn" type="button" id="boton_encriptar" onclick="btnEncriptar()"> Encriptar</button>
+                    <button class="btn" type="button" id="boton_desencriptar" onclick="btnDesencriptar()"> Desencriptar</button>
+                </div>
+            </form>
+        </section>
+        <section class="msg-box">
+            <div>
+                <textarea class="texto__salida__uno" type="text" id="texto_encriptado" placeholder="No hay ningun texto" rows="10" cols="24"></textarea>
+            </div>
+            <div class="botones">
+                <input class="btn" type="button" id="boton_copiar" value="Copiar">
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <a class="imagen__redes" href="https://www.linkedin.com/in/andres-trujillo-osorio/">
+            <img src="./assets/linkedin.png" alt="">
+            </a>  
+        <a class="imagen__redes" href="https://www.twitch.tv/">
+            <img src="./assets/twitch.png" alt="">
+            </a> 
+        <a class="imagen__redes" href="https://github.com/andreztrujillo">
+            <img src="./assets/github.png" alt="">
+            </a>
+        <p>Desarrollado por Andres Trujillo  2024 </p>
+
+    </footer>
+    <script src="app.js"></script>
+    <script src="validacion.js"></script>
+</body>
+</html>
