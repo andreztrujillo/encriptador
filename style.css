@@ -19,7 +19,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-image: url (fondo.jpg);
+    background-image: url("12728.jpg");
     background-color: var (--color-hover);
     color: var (--color-secundario);
     cursor: url (cursor.png), auto;
