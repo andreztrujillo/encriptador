@@ -19,10 +19,10 @@
 body {
     display: flex;
     flex-direction: column;
-    background-image: url(../../encriptador/assets/12728.jpg);
+    background-image: url(12728.jpg);
     background-color: var(--color-primario);
     color: var(--color-secundario);
-    cursor: url(../../encriptador/assets/cursor.png), auto;
+    cursor: url(cursor.png), auto;
 }
 
 .imagen__logo {
@@ -136,7 +136,7 @@ body {
     justify-content: center;
     gap: 0.7em;
     background-color: var(--color-terciario);
-    cursor: url(../../encriptador/assets/cursor.png), auto;
+    cursor: url(cursor.png), auto;
 }
 
 .msg-box {
